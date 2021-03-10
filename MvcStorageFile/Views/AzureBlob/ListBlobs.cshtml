@@ -1,0 +1,20 @@
+﻿@model List<Blobs>
+
+<h1>List box</h1>
+<a asp-action="UploadBlobs" asp-controller="AzureBlob"
+   asp-route-containername="@ViewData["containername"]"
+   >Upload Blob</a>
+
+<ul class="list-group">
+     @foreach (Blobs item in Model)
+     {
+    <li class="list-group-item">
+        @item.Name 
+        <img src="@item.Uri" width="200" height="200" />
+        <a asp-action="DeleteBlobs" asp-controller="AzureBlob"
+           asp-route-container="@ViewData["containername"]"  
+           asp-route-blobname="@item.Name" class="btn btn-danger">Eliminar</a>
+    </li>
+     }
+    
+</ul>

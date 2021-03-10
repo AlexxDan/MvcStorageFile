@@ -1,0 +1,19 @@
+﻿@model List<String>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a asp-action="CreateContainer" asp-controller="AzureBlob">Creat blobs</a>
+<ul class="list-group">
+    @foreach (String item in Model)
+    {
+        <li class="list-group-item">@item
+        <a asp-action="DeleteContainer" asp-controller="AzureBlob" 
+           asp-route-containername="@item"
+           class="btn btn-danger">Eliminar</a>
+        <a asp-action="ListBlobs" asp-controller="AzureBlob" 
+           asp-route-containername="@item" class="btn btn-info">Show Blobs</a>
+    </li>
+    }
+</ul>
