@@ -233,3 +233,5 @@ C:\Users\AlumnoMCSD\Documents\Azure\MvcStorageFile\MvcStorageFile\obj\Debug\netc
 C:\Users\AlumnoMCSD\Documents\Azure\MvcStorageFile\MvcStorageFile\obj\Debug\netcoreapp3.1\Razor\Views\AzureBlob\Index.cshtml.g.cs
 C:\Users\AlumnoMCSD\Documents\Azure\MvcStorageFile\MvcStorageFile\obj\Debug\netcoreapp3.1\Razor\Views\AzureBlob\ListBlobs.cshtml.g.cs
 C:\Users\AlumnoMCSD\Documents\Azure\MvcStorageFile\MvcStorageFile\obj\Debug\netcoreapp3.1\Razor\Views\AzureBlob\UploadBlobs.cshtml.g.cs
+C:\Users\AlumnoMCSD\Documents\Azure\MvcStorageFile\MvcStorageFile\obj\Debug\netcoreapp3.1\Razor\Views\AzureTable\Index.cshtml.g.cs
+C:\Users\AlumnoMCSD\Documents\Azure\MvcStorageFile\MvcStorageFile\obj\Debug\netcoreapp3.1\Razor\Views\AzureTable\Create.cshtml.g.cs

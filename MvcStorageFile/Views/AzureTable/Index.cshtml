@@ -1,0 +1,50 @@
+﻿@model List<Cliente>
+@{
+    ViewData["Title"] = "Index";
+    List<String> empresas = ViewData["empresa"] as List<String>;
+}
+
+<h1>Index</h1>
+
+<div>
+    <a asp-action="Create" asp-controller="AzureTable">Crear</a>
+</div>
+
+@if (empresas!=null) {
+<div>
+    <form method="post">
+        <select name="empresaname">
+            @foreach (String item in empresas)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+        <button type="submit" class="btn-secondary">Enviar</button>
+    </form>
+</div>
+}
+
+@if (Model !=null)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Empresa</th>
+            </tr>
+        </thead>
+        <tbody>
+             @foreach (Cliente cliente in Model)
+            {
+            <tr>
+                <td>@cliente.IdCliente</td>
+                <td>@cliente.Nombre</td>
+                <td>@cliente.Edad</td>
+                <td>@cliente.Empresa</td>
+            </tr>
+            }
+            </tbody>
+    </table>
+}

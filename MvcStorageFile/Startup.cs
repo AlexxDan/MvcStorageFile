@@ -29,6 +29,7 @@ namespace MvcStorageFile
 
           //  services.AddTransient(x=>new ServiceStorageFile(storageKeys));
             services.AddTransient(x => new ServiceStorageBlobs(storageKeys));
+            services.AddTransient(x => new ServiceStorageTables(storageKeys));
             services.AddControllersWithViews();
         }
 
